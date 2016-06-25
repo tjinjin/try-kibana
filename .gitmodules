@@ -1,0 +1,3 @@
+[submodule "private-isu"]
+	path = private-isu
+	url = git@github.com:catatsuy/private-isu.git

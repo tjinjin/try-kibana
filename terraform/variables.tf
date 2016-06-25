@@ -19,23 +19,3 @@ variable "azs" {
   }
 }
 variable "key_name" {}
-
-## blue-green
-variable "blue_ami" {
-  default = "ami-b80b6db8"
-}
-variable "green_ami" {
-  default = "ami-b80b6db8"
-}
-variable "blue_instance_type" {
-  default = "t2.micro"
-}
-variable "green_instance_type" {
-  default = "t2.micro"
-}
-variable "blue_instances" {
-  default = "0"
-}
-variable "green_instances" {
-  default = "0"
-}

@@ -1,5 +1,5 @@
 resource "aws_instance" "main" {
-    ami = "ami-89634988"
+    ami = "${var.common_ami}"
     instance_type = "t2.micro"
     key_name = "${var.key_name}"
     security_groups = ["${aws_security_group.main.id}"]

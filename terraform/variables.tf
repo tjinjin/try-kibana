@@ -23,3 +23,7 @@ variable "iam_instance_profile" {
   default = "admin"
 }
 variable "common_ami"{}
+
+variable "ES_SOURCE_IP" {
+  description = "set envrionment variable"
+}

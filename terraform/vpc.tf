@@ -21,8 +21,7 @@ resource "aws_main_route_table_association" "main" {
 
 resource "aws_subnet" "main" {
     vpc_id = "${aws_vpc.main.id}"
-    count = 2
-    cidr_block = "${lookup(var.subnets, count.index)}"
-    availability_zone = "${lookup(var.azs, count.index)}"
+    cidr_block = "10.89.10.0/24"
+    availability_zone = "ap-northeast-1a"
     map_public_ip_on_launch = true
 }

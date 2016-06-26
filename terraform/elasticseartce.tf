@@ -40,4 +40,8 @@ CONFIG
     tags {
       Domain = "TestDomain"
     }
+
+    lifecycle {
+        ignore_changes =["access_policies"]
+    }
 }
